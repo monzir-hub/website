@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monzir | AI Developer &amp; DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Primary navigation -->
+  <header class="top-nav">
+    <div class="brand">Monzir</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">AI Developer / DevOps Engineer</p>
+        <h1>Monzir</h1>
+        <p class="subtitle">
+          Certified DevOps Engineer with hands-on experience in Docker, Kubernetes, AWS, and CI/CD pipelines.
+          Focused on building scalable, secure, and automated infrastructure.
+        </p>
+        <div class="hero__actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="https://github.com/monzir-hub" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/almonzir-ali-144b5922b/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn outline" href="#" aria-label="Download CV">Download CV</a>
+        </div>
+      </div>
+      <div class="hero__avatar">
+        <div class="avatar-frame">
+          <img src="profile.jpg" alt="Portrait of Monzir" class="avatar-image">
+        </div>
+      </div>
+      <div class="hero__grid">
+        <div class="grid-card">
+          <span>Leadership</span>
+          <strong>Teamwork · Mentorship · Communication</strong>
+        </div>
+        <div class="grid-card">
+          <span>Execution</span>
+          <strong>Ownership · Problem-Solving · Delivery</strong>
+        </div>
+        <div class="grid-card">
+          <span>Craft</span>
+          <strong>Quality · Documentation · Reliability</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="section__header">
+        <h2>Featured Projects</h2>
+        <p>DevOps case studies with architecture, automation, and production-minded delivery.</p>
+      </div>
+      <div class="projects">
+        <article class="project-card" data-project>
+          <div class="project-card__top">
+            <div>
+              <p class="eyebrow">Containerized Flask Application</p>
+              <h3>Books Website on Kubernetes</h3>
+              <p class="project__summary">Flask app with MongoDB behind NGINX, packaged as Docker images and deployed to Kubernetes.</p>
+            </div>
+            <button class="toggle" aria-expanded="false">Details</button>
+          </div>
+          <div class="project-card__body" hidden>
+            <div class="project-meta">
+              <p><strong>Problem:</strong> Needed a portable, reproducible deployment for a Python web app with database and proxy layers.</p>
+              <p><strong>Architecture:</strong> Flask API container, MongoDB stateful set, NGINX reverse proxy, exposed via NodePort 30080 with images published to Docker Hub (<code>monzirr/bookswebsite</code>).</p>
+              <p><strong>Tech Stack:</strong> Docker, Kubernetes, NGINX, Flask, MongoDB.</p>
+              <p><strong>What I Implemented:</strong> Built Dockerfiles, Kubernetes manifests, service configuration for NodePort, and automated image publishing to Docker Hub.</p>
+              <a class="link" href="https://github.com/monzir-hub" target="_blank" rel="noopener">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-project>
+          <div class="project-card__top">
+            <div>
+              <p class="eyebrow">AWS Multi-Tier Architecture</p>
+              <h3>Layered Web Stack in AWS</h3>
+              <p class="project__summary">Isolated public and private tiers with load balancers and hardened network boundaries.</p>
+            </div>
+            <button class="toggle" aria-expanded="false">Details</button>
+          </div>
+          <div class="project-card__body" hidden>
+            <div class="project-meta">
+              <p><strong>Problem:</strong> Deploy a resilient web tier with strict separation between public entry points and private application servers.</p>
+              <p><strong>Architecture:</strong> Custom VPC with public ALB to Nginx servers, internal load balancer to Apache servers in private subnets, security groups enforcing least privilege.</p>
+              <p><strong>Tech Stack:</strong> AWS VPC, ALB, EC2, security groups, subnets, Nginx, Apache.</p>
+              <p><strong>What I Implemented:</strong> Provisioned VPC, subnets, routing, load balancers, and security group rules to isolate layers and allow controlled traffic flow.</p>
+              <a class="link" href="https://github.com/monzir-hub" target="_blank" rel="noopener">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-project>
+          <div class="project-card__top">
+            <div>
+              <p class="eyebrow">CI/CD Pipeline</p>
+              <h3>Jenkins to Kubernetes Delivery</h3>
+              <p class="project__summary">Automated build, test, image push, and cluster deployment from GitHub commits.</p>
+            </div>
+            <button class="toggle" aria-expanded="false">Details</button>
+          </div>
+          <div class="project-card__body" hidden>
+            <div class="project-meta">
+              <p><strong>Problem:</strong> Reduce manual steps and ensure consistent deployments from code to cluster.</p>
+              <p><strong>Architecture:</strong> GitHub triggers Jenkins pipeline to build Docker images, push to registry, and apply Kubernetes manifests.</p>
+              <p><strong>Tech Stack:</strong> Jenkins, GitHub, Docker, Kubernetes.</p>
+              <p><strong>What I Implemented:</strong> Configured Jenkins pipeline stages for build/test/push, Kubernetes deploy steps, and repository webhooks.</p>
+              <a class="link" href="https://github.com/monzir-hub" target="_blank" rel="noopener">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-project>
+          <div class="project-card__top">
+            <div>
+              <p class="eyebrow">AI-Assisted Site</p>
+              <h3>My Mother Is Not Oil</h3>
+              <p class="project__summary">Narrative microsite crafted with AI tooling and custom styling.</p>
+            </div>
+            <button class="toggle" aria-expanded="false">Details</button>
+          </div>
+          <div class="project-card__body" hidden>
+            <div class="project-meta">
+              <p><strong>Problem:</strong> Create a fast, compelling storytelling site without a heavy framework.</p>
+              <p><strong>Architecture:</strong> Static HTML/CSS/JS hosted on a lightweight platform with AI-assisted content generation and manual polish for accessibility.</p>
+              <p><strong>Tech Stack:</strong> Vanilla HTML, CSS, JavaScript.</p>
+              <p><strong>What I Implemented:</strong> Structured content, styling, and deployment for <a class="link" href="https://mymotherisnotoil.com" target="_blank" rel="noopener">mymotherisnotoil.com</a>.</p>
+              <a class="link" href="https://github.com/monzir-hub" target="_blank" rel="noopener">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-project>
+          <div class="project-card__top">
+            <div>
+              <p class="eyebrow">Modern Web Experience</p>
+              <h3>Omdurman Digital Forge</h3>
+              <p class="project__summary">Responsive website showcasing digital services with modern UI.</p>
+            </div>
+            <button class="toggle" aria-expanded="false">Details</button>
+          </div>
+          <div class="project-card__body" hidden>
+            <div class="project-meta">
+              <p><strong>Problem:</strong> Present a polished, performant web experience for a services brand.</p>
+              <p><strong>Architecture:</strong> Static site deployed on Vercel for global edge delivery, leveraging client-side interactions only where needed.</p>
+              <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Vercel hosting.</p>
+              <p><strong>What I Implemented:</strong> Built and deployed the experience at <a class="link" href="https://omdurman-digital-forge-main-lli4mnzk7-amonzir2-2699s-projects.vercel.app/" target="_blank" rel="noopener">live preview</a>, focusing on responsiveness and clean layout.</p>
+              <a class="link" href="https://github.com/monzir-hub" target="_blank" rel="noopener">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="section__header">
+        <h2>Core Skills</h2>
+        <p>Cloud, containers, automation, and secure-by-default delivery.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <p class="eyebrow">Cloud</p>
+          <h4>AWS</h4>
+          <p>EC2, VPC, IAM, EKS</p>
+        </div>
+        <div class="skill-card">
+          <p class="eyebrow">Containers</p>
+          <h4>Docker &amp; Kubernetes</h4>
+          <p>Image builds, orchestration, service exposure</p>
+        </div>
+        <div class="skill-card">
+          <p class="eyebrow">CI/CD</p>
+          <h4>Jenkins &amp; GitHub Actions</h4>
+          <p>Pipeline authoring, artifact delivery, deployments</p>
+        </div>
+        <div class="skill-card">
+          <p class="eyebrow">OS</p>
+          <h4>Linux (Ubuntu)</h4>
+          <p>Shell automation, hardening, troubleshooting</p>
+        </div>
+        <div class="skill-card">
+          <p class="eyebrow">Networking</p>
+          <h4>Load Balancers &amp; Security</h4>
+          <p>Security groups, subnets, ingress/egress control</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="section__header">
+        <h2>About Monzir</h2>
+        <p>Certified DevOps Engineer with a builder mindset.</p>
+      </div>
+      <div class="about">
+        <p>
+          IT graduate and Certified DevOps Engineer with hands-on experience in cloud infrastructure, containerization, and CI/CD automation.
+          Actively working as an AI-assisted developer, building and deploying websites and systems using AI agents to accelerate development
+          while maintaining scalable, secure, and production-ready architectures.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="section__header">
+        <h2>Contact</h2>
+        <p>Let’s talk about infrastructure, automation, or open roles.</p>
+      </div>
+      <div class="contact">
+        <a class="contact-item" href="mailto:monzirali@outlook.com">monzirali@outlook.com</a>
+          <a class="contact-item" href="https://www.linkedin.com/in/almonzir-ali-144b5922b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="contact-item" href="https://github.com/monzir-hub" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Monzir. Built for reliability.</p>
+    <div class="footer__links">
+      <a href="https://www.linkedin.com/in/almonzir-ali-144b5922b/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      <a href="https://github.com/monzir-hub" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
